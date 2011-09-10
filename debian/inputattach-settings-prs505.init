@@ -1,0 +1,16 @@
+#!/bin/sh -e
+
+case "$1" in
+    start)
+        /usr/sbin/inputattach --prs505 /dev/ttymxc0 &
+        ;;
+    stop)
+        killall inputattach
+        ;;
+    *)
+        echo "Usage: /etc/init.d/inputattach {start|stop}"
+        exit 1
+        ;;
+esac
+
+exit 0

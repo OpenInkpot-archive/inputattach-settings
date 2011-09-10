@@ -1,0 +1,14 @@
+Source: inputattach-settings
+Section: core
+Priority: optional
+Maintainer: Alexander Kerner <lunohod@openinkpot.org>
+Build-Depends: debhelper (>= 7)
+XCS-Cross-Host-Build-Depends: debhelper (>= 7)
+Standards-Version: 3.8.0
+
+Package: inputattach-settings-prs505
+Architecture: all
+Depends: inputattach
+Section: core
+Description: init script to start inputattach
+ Init script to start inputattach with appropriate configuration for PRS505.
